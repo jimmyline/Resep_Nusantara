@@ -1,0 +1,41 @@
+.search-results-header {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px 0;
+}
+
+.search-results-header h1 {
+    font-size: 2rem;
+    color: #680707;
+    margin-bottom: 10px;
+}
+
+.search-results-header p {
+    color: #6c757d;
+    font-size: 1rem;
+}
+
+.recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.no-results {
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 50px 20px;
+}
+
+.no-results i {
+    font-size: 3rem;
+    color: #680707;
+    margin-bottom: 20px;
+}
+
+.no-results p {
+    color: #6c757d;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}

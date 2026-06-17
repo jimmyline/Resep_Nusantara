@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gado-Gado - Resep Nusantara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recipe-detail.css">
+    <script src="js/recipe-detail.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="title">
+                <h1 class="logo-text">Resep Nusantara</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari resep...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="afterlogin.html">Beranda</a>
+                <a href="upload.html">Upload Resep</a>
+                <a href="my-recipes.html">Resep Saya</a>
+                <a href="saved-recipes.html">Disimpan</a>
+            </div>
+            <div class="user-profile">
+                <div class="profile-info">
+                    <img src="images/profile abu.jpg" alt="Profile" class="profile-img">
+                    <span class="profile-name" id="displayUsername"></span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="recipe-detail">
+        <div class="recipe-header">
+            <div class="recipe-image">
+                <img id="recipeImage" src="images/gado.jpg" alt="Gado-Gado">
+                <button id="saveRecipeBtn" class="save-btn">
+                    <i class="far fa-bookmark"></i> Simpan
+                </button>
+            </div>
+            <div class="recipe-meta">
+                <h1 id="recipeTitle">Gado-Gado</h1>
+                <div class="author-info">
+                    <img id="authorAvatar" src="images/woman.jpg" alt="Penulis">
+                    <div>
+                        <span id="authorName">Fredelica</span>
+                        <span id="uploadDate">20 Mei 2024</span>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <i class="far fa-clock"></i>
+                        <span id="cookingTime">60</span> menit
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-utensils"></i>
+                        <span id="servings">4</span> porsi
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Deskripsi</h2>
+            <p id="recipeDescription">Gado-gado pertama kali dibuat oleh masyarakat Kampung Tugu di Cilincing, Jakarta Utara. Kata "gado-gado" memiliki arti campur-campur. Kini berkembang dengan variasi sayuran seperti kacang panjang, taoge, kangkung, kol, dan timun, disajikan dengan bumbu kacang yang khas.</p>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Bahan-bahan</h2>
+            <ul id="ingredientsList" class="ingredients-list">
+                <li>Kubis atau kol</li>
+                <li>Bayam</li>
+                <li>Mentimun</li>
+                <li>Tauge</li>
+                <li>Kentang</li>
+                <li>Kacang panjang</li>
+                <li>Tahu kuning</li>
+                <li>Telur</li>
+                <li>Kerupuk dan emping</li>
+                <li>Bawang goreng (opsional)</li>
+                <li>Cabe rawit 4 buah</li>
+                <li>Cabe merah 4 buah</li>
+                <li>Gula merah 4 sdt</li>
+                <li>Terasi bakar 1 sdt</li>
+                <li>Air asam jawa 1,5 sdm</li>
+                <li>Garam 2 sdt</li>
+                <li>Kacang tanah 175 gram</li>
+                <li>Kacang kenari 175 gram</li>
+                <li>Kecap manis</li>
+                <li>Air sebanyak 750 ml</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Langkah Pembuatan</h2>
+            <ol id="stepsList" class="steps-list">
+                <li>Cuci bersih semua sayuran seperti kubis, bayam, mentimun, tauge, kentang, dan kacang panjang.</li>
+                <li>Iris tipis kubis dan potong kacang panjang sesuai selera.</li>
+                <li>Kupas kentang dan potong menjadi beberapa bagian.</li>
+                <li>Potong tahu kuning sesuai selera.</li>
+                <li>Rebus telur hingga matang, lalu kupas kulitnya.</li>
+                <li>Rebus kubis, bayam, tauge, kacang panjang, dan kentang satu per satu hingga matang, lalu tiriskan.</li>
+                <li>Panaskan minyak dalam wajan, goreng tahu kuning hingga keemasan. Angkat dan tiriskan.</li>
+                <li>Goreng kacang tanah dan kacang kenari hingga kecoklatan, lalu tiriskan.</li>
+                <li>Haluskan kacang tanah, kacang kenari, cabai rawit, cabai merah, terasi bakar, garam, dan gula merah menggunakan cobek atau blender.</li>
+                <li>Tambahkan air asam jawa dan air, lalu aduk hingga rata.</li>
+                <li>Masak saus dalam panci dengan api kecil hingga mengental, tambahkan kecap manis sesuai selera.</li>
+                <li>Susun sayuran rebus, tahu goreng, dan telur di piring saji.</li>
+                <li>Siram dengan saus kacang yang sudah matang.</li>
+                <li>Taburkan bawang goreng sebagai pelengkap.</li>
+                <li>Sajikan dengan kerupuk dan emping agar lebih nikmat.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Berikan Rating &amp; Ulasan</h2>
+            <div class="rating-form">
+                <div class="stars">
+                    <span class="star" data-value="1"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="2"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="3"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="4"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="5"><i class="far fa-star"></i></span>
+                </div>
+                <textarea id="reviewText" placeholder="Bagaimana pengalaman Anda mencoba resep ini?"></textarea>
+                <button id="submitReviewBtn" class="btn-submit">Kirim Ulasan</button>
+            </div>
+            <div id="reviewsContainer" class="reviews-container"></div>
+        </div>
+    </div>
+</body>
+</html>

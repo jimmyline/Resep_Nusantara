@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Saya - Resep Nusantara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recipe.css">
+    <script src="js/recipes.js" defer></script>
+    <script src="js/search.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="title">
+                <h1 class="logo-text">Resep Nusantara</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari resep...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="afterlogin.html">Beranda</a>
+                <a href="upload.html">Upload Resep</a>
+                <a href="my-recipes.html" class="active">Resep Saya</a>
+                <a href="saved-recipes.html">Disimpan</a>
+            </div>
+            <div class="user-profile">
+                <div class="profile-info">
+                    <img src="images/profile abu.jpg" alt="Profile" class="profile-img">
+                    <span class="profile-name" id="displayUsername"></span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="my-recipes-header">
+            <h1>Resep Saya</h1>
+            <p>Koleksi resep yang telah Anda buat dan bagikan</p>
+        </div>
+
+        <div class="recipes-container" id="recipesContainer">
+            <div class="empty-state">
+                <i class="fas fa-utensils"></i>
+                <p>Anda belum memiliki resep</p>
+                <a href="upload.html" class="btn-upload">Upload Resep Pertama Anda</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

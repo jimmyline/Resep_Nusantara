@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasi Kuning - Resep Nusantara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recipe-detail.css">
+    <script src="js/recipe-detail.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="title">
+                <h1 class="logo-text">Resep Nusantara</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari resep...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="afterlogin.html">Beranda</a>
+                <a href="upload.html">Upload Resep</a>
+                <a href="my-recipes.html">Resep Saya</a>
+                <a href="saved-recipes.html">Disimpan</a>
+            </div>
+            <div class="user-profile">
+                <div class="profile-info">
+                    <img src="images/profile abu.jpg" alt="Profile" class="profile-img">
+                    <span class="profile-name" id="displayUsername"></span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="recipe-detail">
+        <div class="recipe-header">
+            <div class="recipe-image">
+                <img id="recipeImage" src="images/nasikuning.jpg" alt="Nasi Kuning">
+                <button id="saveRecipeBtn" class="save-btn">
+                    <i class="far fa-bookmark"></i> Simpan
+                </button>
+            </div>
+            <div class="recipe-meta">
+                <h1 id="recipeTitle">Nasi Kuning</h1>
+                <div class="author-info">
+                    <img id="authorAvatar" src="images/woman.jpg" alt="Penulis">
+                    <div>
+                        <span id="authorName">Fredelica</span>
+                        <span id="uploadDate">20 Mei 2024</span>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <i class="far fa-clock"></i>
+                        <span id="cookingTime">60</span> menit
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-utensils"></i>
+                        <span id="servings">6</span> porsi
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Deskripsi</h2>
+            <p id="recipeDescription">Nasi Kuning berasal dari zaman Kerajaan Majapahit dan awalnya hanya disajikan pada saat-saat tertentu oleh orang yang berstatus tinggi. Nama "Nasi Kuning" berasal dari warna kuning yang diperoleh dari kunyit, melambangkan keceriaan, kesejahteraan, dan kemakmuran.</p>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Bahan-bahan</h2>
+            <ul id="ingredientsList" class="ingredients-list">
+                <li>Beras 3 cup (1 cup = 185-200 gr)</li>
+                <li>Santan 200 ml</li>
+                <li>Daun pandan 3 lembar</li>
+                <li>Serai 4 batang</li>
+                <li>Daun jeruk 2 lembar</li>
+                <li>Daun salam 5 lembar</li>
+                <li>Bawang merah 5 buah</li>
+                <li>Bawang putih 4 buah</li>
+                <li>Kunyit secukupnya</li>
+                <li>Garam dan penyedap secukupnya</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Langkah Pembuatan</h2>
+            <ol id="stepsList" class="steps-list">
+                <li>Cuci bersih beras, kemudian tiriskan.</li>
+                <li>Blender kunyit dengan 3 sdm air, lalu saring dan ambil airnya.</li>
+                <li>Iris bawang merah, bawang putih, dan jahe.</li>
+                <li>Geprek serai, lengkuas, dan ikat daun pandan.</li>
+                <li>Panaskan wajan, masukkan santan, air kunyit, bawang merah, bawang putih, jahe, serai, lengkuas, daun pandan, daun jeruk, dan daun salam.</li>
+                <li>Tambahkan air sesuai takaran memasak nasi di rice cooker.</li>
+                <li>Aduk terus hingga mendidih, lalu matikan api.</li>
+                <li>Tuang santan berbumbu ke dalam beras di rice cooker.</li>
+                <li>Jika kurang air, tambahkan secukupnya. Aduk hingga rata.</li>
+                <li>Tekan tombol "cook" dan tunggu hingga matang.</li>
+                <li>Aduk nasi agar bumbu merata.</li>
+                <li>Sajikan dengan tempe orek, telur balado, dan bawang goreng.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Berikan Rating &amp; Ulasan</h2>
+            <div class="rating-form">
+                <div class="stars">
+                    <span class="star" data-value="1"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="2"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="3"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="4"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="5"><i class="far fa-star"></i></span>
+                </div>
+                <textarea id="reviewText" placeholder="Bagaimana pengalaman Anda mencoba resep ini?"></textarea>
+                <button id="submitReviewBtn" class="btn-submit">Kirim Ulasan</button>
+            </div>
+            <div id="reviewsContainer" class="reviews-container"></div>
+        </div>
+    </div>
+</body>
+</html>

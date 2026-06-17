@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Nusantara - Tempat Berbagi Resep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/search.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="title">
+                <h1 class="logo-text">Resep Nusantara</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari resep...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="halamandepan.html" class="active">Beranda</a>
+                <a href="upload.html">Upload Resep</a>
+                <a href="my-recipes.html">Resep Saya</a>
+                <a href="saved-recipes.html">Disimpan</a>
+            </div>
+            <div class="user-actions">
+                <a href="Login.html" class="btn-login">Masuk</a>
+                <a href="register.html" class="btn-register">Daftar</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="event-poster">
+        <div class="poster-container">
+            <button class="carousel-btn prev-btn" aria-label="Previous slide">&lt;</button>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="">
+                            <img src="images/Renatta Moeloek.png" alt="Event Poster 1" class="poster-image">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="images/getuk.png" alt="Event Poster 2" class="poster-image">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="images/kona.jpg" alt="Event Poster 3" class="poster-image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next-btn" aria-label="Next slide">&gt;</button>
+        </div>
+        <div class="carousel-indicators">
+            <button class="indicator active" aria-label="Slide 1"></button>
+            <button class="indicator" aria-label="Slide 2"></button>
+            <button class="indicator" aria-label="Slide 3"></button>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Rekomendasi Nusantara</h2>
+            <div class="category-grid">
+                <a href="gado.html" class="category-card">
+                    <img src="images/gado.jpg" alt="Gado-gado">
+                    <h3>Gado-gado</h3>
+                </a>
+                <a href="nasikuning.html" class="category-card">
+                    <img src="images/nasikuning.jpg" alt="Nasi Kuning">
+                    <h3>Nasi Kuning</h3>
+                </a>
+                <a href="ayamwoku.html" class="category-card">
+                    <img src="images/woku.jpg" alt="Ayam Woku">
+                    <h3>Ayam Woku</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="images/sambalroa.jpg" alt="Sambal Roa">
+                    <h3>Sambal Roa</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Recipes -->
+    <section class="popular-recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resep Sahabat Nusantara</h2>
+                <a href="#" class="see-all">Lihat Semua</a>
+            </div>
+            <div class="recipe-grid">
+                <div class="recipe-card">
+                    <a href="recipe-detail.html">
+                        <div class="recipe-img">
+                            <img src="images/gudeg.jpg" alt="Gudeg">
+                            <div class="recipe-badge">Top Rated</div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Gudeg</h3>
+                            <div class="recipe-meta">
+                                <span><i class="far fa-clock"></i> 50 menit</span>
+                                <span><i class="fas fa-utensils"></i> 2 porsi</span>
+                            </div>
+                            <div class="recipe-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                                <span class="review-count">(187)</span>
+                            </div>
+                            <div class="recipe-author">
+                                <img src="images/woman.jpg" alt="Fransesca" class="author-avatar">
+                                <span class="author-name">Fransesca</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="recipe-card">
+                    <a href="recipe-detail.html">
+                        <div class="recipe-img">
+                            <img src="images/miecelor.jpg" alt="Mie Celor">
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Mie Celor</h3>
+                            <div class="recipe-meta">
+                                <span><i class="far fa-clock"></i> 90 menit</span>
+                                <span><i class="fas fa-utensils"></i> 4 porsi</span>
+                            </div>
+                            <div class="recipe-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.8</span>
+                                <span class="review-count">(156)</span>
+                            </div>
+                            <div class="recipe-author">
+                                <img src="images/woman2.jpg" alt="Mikasa" class="author-avatar">
+                                <span class="author-name">Mikasa</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="recipe-card">
+                    <a href="recipe-detail.html">
+                        <div class="recipe-img">
+                            <img src="images/tahu sumedang.jpg" alt="Tahu Sumedang">
+                            <div class="recipe-badge">Favorit</div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Tahu Sumedang</h3>
+                            <div class="recipe-meta">
+                                <span><i class="far fa-clock"></i> 30 menit</span>
+                                <span><i class="fas fa-utensils"></i> 8 potong</span>
+                            </div>
+                            <div class="recipe-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.5</span>
+                                <span class="review-count">(203)</span>
+                            </div>
+                            <div class="recipe-author">
+                                <img src="images/man.jpg" alt="Budianto" class="author-avatar">
+                                <span class="author-name">Budianto</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community-section">
+        <div class="container">
+            <h2 class="section-title">Komunitas Nusantara</h2>
+            <p>Diskusikan dengan Sahabat Nusantara</p>
+            <a href="#" style="color: white;">Lihat Forum</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h1 style="font-family: 'Libre Caslon Text'; color: #ffffff;">Resep Nusantara</h1>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Tentang</h3>
+                        <a href="#">Tentang Kami</a>
+                        <a href="#">Karier</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="link-group">
+                        <h3>Bantuan</h3>
+                        <a href="#">Pusat Bantuan</a>
+                        <a href="#">Kebijakan Privasi</a>
+                        <a href="#">Syarat &amp; Ketentuan</a>
+                    </div>
+                    <div class="link-group">
+                        <h3>Komunitas</h3>
+                        <a href="#">Panduan Komunitas</a>
+                        <a href="#">Acara</a>
+                        <a href="#">Kontes</a>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Resep Nusantara</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
