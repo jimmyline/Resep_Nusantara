@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Nusantara - Tempat Berbagi Resep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script type="module" src="js/pages/home-page.js"></script>
+    <script type="module" src="js/pages/search-page.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="title">
+                <h1 class="logo-text">Resep Nusantara</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari resep...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="afterlogin.html" class="active">Beranda</a>
+                <a href="upload.html">Upload Resep</a>
+                <a href="my-recipes.html">Resep Saya</a>
+                <a href="saved-recipes.html">Disimpan</a>
+            </div>
+            <div class="user-profile">
+                <div class="profile-info">
+                    <img src="images/profile abu.jpg" alt="Profile" class="profile-img">
+                    <span class="profile-name" id="displayUsername"></span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Rekomendasi Nusantara</h2>
+            <div class="category-grid"></div>
+        </div>
+    </section>
+
+    <!-- Popular Recipes -->
+    <section class="popular-recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resep Sahabat Nusantara</h2>
+                <a href="search-result.html" class="see-all">Lihat Semua</a>
+            </div>
+            <div class="recipe-grid"></div>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <div class="container">
+            <h2 class="section-title">Event Nusantara</h2>
+            <div class="events-list"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h1 style="font-family: 'Libre Caslon Text'; color: #ffffff;">Resep Nusantara</h1>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Tentang</h3>
+                        <span>Tentang Kami</span>
+                        <span>Karier</span>
+                        <span>Blog</span>
+                    </div>
+                    <div class="link-group">
+                        <h3>Bantuan</h3>
+                        <span>Pusat Bantuan</span>
+                        <span>Kebijakan Privasi</span>
+                        <span>Syarat &amp; Ketentuan</span>
+                    </div>
+                    <div class="link-group">
+                        <h3>Komunitas</h3>
+                        <span>Panduan Komunitas</span>
+                        <span>Acara</span>
+                        <span>Kontes</span>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <span><i class="fab fa-facebook"></i></span>
+                        <span><i class="fab fa-instagram"></i></span>
+                        <span><i class="fab fa-twitter"></i></span>
+                        <span><i class="fab fa-youtube"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Resep Nusantara</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
